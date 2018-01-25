@@ -1,0 +1,10 @@
+type Query {
+  getBalance(address: String): Balance
+}
+
+type Balance {
+  success: Boolean,
+  balance: String,
+  unconfirmedBalance: String,
+  error: String
+}

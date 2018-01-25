@@ -1,0 +1,5 @@
+# import Balance from "./types/account.graphql"
+
+type Query {
+  getBalance(address: String): Balance
+}
