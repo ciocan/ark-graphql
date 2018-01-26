@@ -1,6 +1,6 @@
 ### [ARK GraphQL][arkgraphql]
 
-  [arkgraphql]: https://ark-graphql-xlsjsxtkwf.now.sh/ "ARK GraphQL"
+  [arkgraphql]: https://ark-graphql-lbchpgzfyq.now.sh/ "ARK GraphQL"
 
 GraphQL Server for ARK Blockchain
 

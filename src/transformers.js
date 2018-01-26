@@ -13,3 +13,7 @@ export const transformDelegatesResponse = (response) => {
 export const transformTransactionResponse = ({ success, error, transaction }) => {
   return { success, error, transaction };
 };
+
+export const transformTransactionsResponse = ({ success, error, transactions }) => {
+  return { success, error, transactions };
+};

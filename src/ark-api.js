@@ -3,7 +3,8 @@ import {
   transformAccountResponse,
   transformTopAccountResponse,
   transformDelegatesResponse,
-  transformTransactionResponse
+  transformTransactionResponse,
+  transformTransactionsResponse
 } from './transformers';
 
 const NET_HASH = '6e84d08bd299ed97c212c886c98a57e36545c8f5d645ca7eeae63a8bd62d8988';
@@ -44,3 +45,7 @@ export const getDelegates = (address) =>
 export const getTransaction = (id) =>
   makeApiCall(`/api/transactions/get?id=${id}`)
     .then(transformTransactionResponse);
+
+export const getTransactions = () =>
+  makeApiCall(`/api/transactions`)
+    .then(transformTransactionsResponse);
