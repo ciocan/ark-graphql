@@ -1,10 +1,20 @@
-type Query {
-  getBalance(address: String): Balance
+type Balance {
+  success: Boolean
+  balance: Int
+  unconfirmedBalance: Int
+  error: String
 }
 
-type Balance {
-  success: Boolean,
-  balance: String,
-  unconfirmedBalance: String,
+type Account {
+  success: String
   error: String
+  address: String
+  unconfirmedBalance: Int
+  balance: Int
+  publicKey: String,
+  unconfirmedSignature: Int
+  secondSignature: Int
+  secondPublicKey: String
+  multisignatures: [String]
+  u_multisignatures: [String]
 }

@@ -5,7 +5,8 @@
   "main": "./src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/server.js --exec babel-node -e js"
+    "start": "nodemon ./src/server.js --exec babel-node -e js",
+    "lint": "eslint ."
   },
   "author": "Radu Ciocan",
   "license": "MIT",
@@ -27,24 +28,22 @@
     ],
     "plugins": [
       "static-fs",
-      "babel-plugin-inline-import"
+      "babel-plugin-inline-import",
+      "transform-object-rest-spread"
     ]
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.2",
     "babel-plugin-inline-import": "^2.0.6",
     "babel-plugin-static-fs": "^1.1.0",
     "babel-plugin-transform-async-generator-functions": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-eslint": "^8.0.2",
     "eslint": "^4.14.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-class-property": "^1.1.0",
-    "eslint-plugin-flowtype": "^2.39.1",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jasmine": "^2.9.1",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint-plugin-jasmine": "^2.9.1"
   }
 }
