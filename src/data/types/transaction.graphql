@@ -23,4 +23,5 @@ type Transactions {
   success: Boolean
   error: String
   transactions: [TransactionData]
+  count: String
 }

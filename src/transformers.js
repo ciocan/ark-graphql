@@ -14,6 +14,6 @@ export const transformTransactionResponse = ({ success, error, transaction }) =>
   return { success, error, transaction };
 };
 
-export const transformTransactionsResponse = ({ success, error, transactions }) => {
-  return { success, error, transactions };
+export const transformTransactionsResponse = ({ success, error, count, transactions }) => {
+  return { success, error, count, transactions };
 };

@@ -46,6 +46,6 @@ export const getTransaction = (id) =>
   makeApiCall(`/api/transactions/get?id=${id}`)
     .then(transformTransactionResponse);
 
-export const getTransactions = () =>
-  makeApiCall(`/api/transactions`)
+export const getTransactions = ({ limit }) =>
+  makeApiCall(`/api/transactions?limit=${limit}`)
     .then(transformTransactionsResponse);

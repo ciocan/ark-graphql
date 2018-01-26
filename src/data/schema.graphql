@@ -11,5 +11,5 @@ type Query {
   getTopAccounts: TopAccounts
   getDelegates(address: String): Delegates
   getTransaction(id: String): Transaction
-  getTransactions: Transactions
+  getTransactions(limit: String): Transactions
 }
