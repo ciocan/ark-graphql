@@ -1,3 +1,7 @@
-export const transformAccount = ({ success, account }) => {
+export const transformAccountResponse = ({ success, account }) => {
   return { success, ...account };
+};
+
+export const transformTopAccountResponse = (response) => {
+  return response;
 };

@@ -11,10 +11,22 @@ type Account {
   address: String
   unconfirmedBalance: Int
   balance: Int
-  publicKey: String,
+  publicKey: String
   unconfirmedSignature: Int
   secondSignature: Int
   secondPublicKey: String
   multisignatures: [String]
   u_multisignatures: [String]
+}
+
+type TopAccounts {
+  success: Boolean
+  error: String
+  accounts: [TopAcount]
+}
+
+type TopAcount {
+  address: String
+  balance: Int
+  publicKey: String
 }
