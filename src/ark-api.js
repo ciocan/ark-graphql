@@ -2,7 +2,8 @@ import fetch from 'node-fetch';
 import {
   transformAccountResponse,
   transformTopAccountResponse,
-  transformDelegatesResponse
+  transformDelegatesResponse,
+  transformTransactionResponse
 } from './transformers';
 
 const NET_HASH = '6e84d08bd299ed97c212c886c98a57e36545c8f5d645ca7eeae63a8bd62d8988';
@@ -39,3 +40,7 @@ export const getTopAccounts = () =>
 export const getDelegates = (address) =>
   makeApiCall(`/api/accounts/delegates?address=${address}`)
     .then(transformDelegatesResponse);
+
+export const getTransaction = (id) =>
+  makeApiCall(`/api/transactions/get?id=${id}`)
+    .then(transformTransactionResponse);

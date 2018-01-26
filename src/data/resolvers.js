@@ -2,7 +2,8 @@ import {
   getBalance,
   getAccount,
   getTopAccounts,
-  getDelegates
+  getDelegates,
+  getTransaction
 } from '../ark-api';
 
 export const resolvers = {
@@ -11,5 +12,6 @@ export const resolvers = {
     getAccount: (_, { address }) => getAccount(address),
     getTopAccounts: () => getTopAccounts(),
     getDelegates: (_, { address }) => getDelegates(address),
+    getTransaction: (_, { id }) => getTransaction(id)
   }
 };
