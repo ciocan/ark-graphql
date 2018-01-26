@@ -30,3 +30,21 @@ type TopAcount {
   balance: Int
   publicKey: String
 }
+
+type Delegates {
+  success: Boolean
+  error: String
+  delegates: [Delegate]
+}
+
+type Delegate {
+  username: String
+  address: String
+  publicKey: String
+  vote: String
+  producedblocks: Float
+  missedblocks: Float
+  rate: Float
+  approval: Float
+  productivity: Float
+}
