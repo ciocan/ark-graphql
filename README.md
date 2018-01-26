@@ -2,7 +2,7 @@
 
   [arkgraphql]: https://ark-graphql-ruhoxkwwea.now.sh/ "ARK GraphQL"
 
-GraphQL Server for ARK Blockchain
+#### GraphQL Server for ARK Blockchain
 
 ![](assets/screenshot.png)
 
@@ -11,4 +11,19 @@ GraphQL Server for ARK Blockchain
 ```
 yarn
 yarn start
+```
+
+#### Implemented API Calls
+```
+  getBalance(address: String): Balance
+  getAccount(address: String): Account
+  getTopAccounts: TopAccounts
+  getDelegates(address: String): Delegates
+  getTransaction(id: String): Transaction
+  getTransactions(limit: String): Transactions
+```
+
+###  Support this project
+```
+ARK: AS7rX2h8Eu99uSruxwq4BKZfJFkKmAvoAb
 ```
