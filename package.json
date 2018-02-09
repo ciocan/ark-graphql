@@ -32,6 +32,9 @@
       "transform-object-rest-spread"
     ]
   },
+  "now": {
+    "alias": "ark-graphql"
+  },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
     "babel-plugin-inline-import": "^2.0.6",
